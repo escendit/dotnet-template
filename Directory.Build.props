@@ -5,11 +5,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <!-- Analyzer Commons  -->
-  <PropertyGroup>
-    <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <CodeAnalysisRuleSetLocation>$(NuGetPackageRoot)</CodeAnalysisRuleSetLocation>
-  </PropertyGroup>
   <!-- SourceLink -->
   <PropertyGroup>
     <RepositoryType>git</RepositoryType>
@@ -24,10 +19,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
   </PropertyGroup>
-  <!-- Net Analyzers -->
-  <PropertyGroup>
-    <EnableNETAnalyzers>true</EnableNETAnalyzers>
-  </PropertyGroup>
+
   <!-- Package Commons -->
   <ItemGroup>
     <PackageReference Include="Escendit.Tools.Branding">
