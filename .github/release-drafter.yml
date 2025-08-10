@@ -49,15 +49,16 @@ template: |
 
   $CONTRIBUTORS
 autolabeler:
-  - label: "dependencies/github-actions"
+  - label: "area/dev-tooling"
     files:
       - ".github/**/*"
-  - label: "dependencies/dotnet-sdk"
-    files:
-      - "global.json"
-  - label: "dependencies/nuget"
-    files:
+      - ".editorconfig"
+      - ".gitignore"
+      - ".globalconfig"
+      - "Directory.Build.props"
       - "Directory.Packages.props"
+      - "global.json"
+      - "nuget.config"
   - label: "documentation"
     files:
       - "docs/**/*"
