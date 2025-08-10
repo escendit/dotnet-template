@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: "27 1 1 * *"
 
+# Prevent Concurrent Jobs
+concurrency:
+  group: labels-monthly-${{ github.ref }}
+  cancel-in-progress: true
+
 # Grant only what’s needed; label management requires issues: write
 permissions:
   contents: read
