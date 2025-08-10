@@ -12,10 +12,10 @@
     <RepositoryUrl>https://github.com/escendit/dotnet-template</RepositoryUrl>
     <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
-  <!-- NuGet Restore: Cache -->
+  <!-- NuGet Restore -->
   <PropertyGroup>
-    <RestoreLockedMode>true</RestoreLockedMode>
-    <RestorePackagesWithLockFile Condition="'$(CI)' == 'true'">true</RestorePackagesWithLockFile>
+    <RestoreLockedMode Condition="'$(CI)' == 'true'">true</RestoreLockedMode>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
   <!-- Packaging -->
   <PropertyGroup>
